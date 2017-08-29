@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">    
+	<head>        
+		<meta charset="utf-8" />        
+		<title>Entry Field</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+	</head>   
+
+
+	<style>
+				.input{
+					width: 350px;
+					height: 100px;
+
+				}
+
+				#inputField{
+				  position: relative;
+				  color: #aaa;
+				  font-size: 14px;
+				  font-family: Helvetica;
+				  width: 230px;
+				  height: 32px;
+				  text-indent: 50px;
+				  background: #fcfcfc;
+				  border: 0.5px solid #aaa;
+				  border-radius: 5px;
+				  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+				  background-image: url('phone2-icon.png');
+				  background-repeat: no-repeat;
+				  background-position: 11px 8px;
+				  background-size: auto 19px;
+				  opacity: 0.5
+				}
+
+				#passIcon{
+					display: none;
+					float: right;
+					padding-top: 5px;
+					width: 35px;
+					height: 25px;
+				}
+
+				#failIcon{
+					 display: none; 
+					 float: right;
+					padding-top: 5px;
+					width: 35px;
+					height: 25px;
+				}
+
+				.icon{
+					width: 275px;
+
+				}
+
+				#error{
+					display: none;
+					position: relative;
+					top: 0;
+					font-size: 11px;
+					font-family: Helvetica;
+					font-weight: bold;
+					background-color: #F15D5D;
+					color: white;
+					width: 235px;
+					height: 35px;
+					text-align: center;
+					padding: 3px 0;
+					border-radius: 5px;
+					line-height: 32px;
+				}
+
+
+				#inputField.invalid{
+					border: 2px solid #F15D5D;
+				}
+
+				#inputField.valid{
+					border: 2px solid #95D7E5;
+				}
+
+
+
+	</style>
+
+
+
+	
+	<body>  
+		<form id="form">
+			
+			<div class="input">
+				<div class="icon">
+					<input type="text" id="inputField" placeholder="Mobile Phone">
+					<img src="pass-icon.png" id="passIcon">
+					<img src="fail-icon.png" id="failIcon">
+				</div>
+				<span id="error">Please check and re-enter your number</span>
+				
+			</div>
+			
+		</form>
+		<!-- <p style="display: block;">
+			<div>
+				<label>Read Only</label>
+			</div>
+			<div>
+				<select id="readOnly">
+					<option value="true">Read Only</option>
+					<option value="false">Editable</option>
+				</select>
+				
+			</div>
+		</p>
+		<div>
+			<label>Disabled</label>
+			<input type="checkbox" id="checkBox" />
+		</div>
+		
+		<div>
+			<p id="flag1">flag1</p>
+			<p id="flag2">flag2</p>
+			<p id="flag3">flag3</p>
+		</div> -->
+	</body>
+
+	<script src="ex02.js" type="text/javascript"></script>
+	
+</html>
